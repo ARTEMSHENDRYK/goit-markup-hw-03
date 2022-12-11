@@ -127,7 +127,8 @@ h1,h2,h3,p,ul {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  width: 492px;
 }
 
 .button {
@@ -136,6 +137,9 @@ h1,h2,h3,p,ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -151,7 +155,7 @@ h1,h2,h3,p,ul {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .section {
@@ -249,10 +253,15 @@ footer {
 
 .button-portfolio {
   color: var(--accent-color);
-  background-color: var(--button-portfolio-bg-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
+  padding: 12px 24px;
+  background: var(--logo-footer-color);
+  border: 1px solid var(--button-portfolio-bg-color);
+  border-radius: 4px;
+
+
 }
 
 .button-portfolio:hover,
@@ -288,7 +297,6 @@ footer {
 	flex-basis: calc(100% / 3 - 2 var(--card-gap));
 	margin-bottom: var(--card-gap);
 	margin-left: var(--card-gap);
-  border-bottom: 0.5px solid var(--logo-footer-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -297,5 +305,7 @@ footer {
   padding-bottom: 32px;
   padding-left: 16px;
   background-color: var(--primary-white-color);
+  border: 0.5px solid var(--logo-footer-color);
+  border-top: none;
 }
 
